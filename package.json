@@ -1,0 +1,20 @@
+{
+  "name": "youtube-playwright-automation",
+  "version": "1.1.0",
+  "description": "Software Testing semester project - E2E automation of YouTube using Playwright",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:mobile": "playwright test --project=mobile",
+    "test:ui": "playwright test --ui",
+    "demo": "playwright test -c playwright.demo.config.js",
+    "demo:search": "playwright test -c playwright.demo.config.js tests/search.spec.js",
+    "demo:video": "playwright test -c playwright.demo.config.js tests/video.spec.js tests/player-controls.spec.js",
+    "debug": "playwright test --project=chromium --debug",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
